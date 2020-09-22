@@ -23,11 +23,10 @@ public class CSStudent extends GamePiece implements Moveable {
 	
 	// Moves to a random location on the board
 	public void move(Drawable[] gameBoard, int playerLocation) { 
-		final int MIN = 0;
 		boolean possible = false;
 		int potentialLocation;
 		while (!possible) {
-			potentialLocation = (int)(Math.random() * (GameEngine.BOARD_SIZE - MIN + 1) + MIN);
+			potentialLocation = (int)(Math.random() * (GameEngine.BOARD_SIZE-1));
 			if (gameBoard[potentialLocation] == null && potentialLocation != playerLocation) {
 				possible = true;
 				int previousLocation = this.getLocation();

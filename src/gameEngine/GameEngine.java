@@ -96,6 +96,7 @@ public class GameEngine {
 		System.out.println("The object of the game is to capture prizes without being killed.");
 		System.out.println("You need " + Player.POINTS_TO_ADVANCE + 
 				" points to advance, you die after " + Player.POINTS_TO_DIE + " hits.") ;
+		
 	}
 	
 

@@ -8,8 +8,8 @@ import gameEngine.InteractionResult;
  *  This is an abstract class because it contains an abstract 
  *  method AND an instance variable
  * 
- * @author Mark Baldwin
- * @author Cyndi Rader
+ * @author Shane Cranor
+ * @author Louis Miller
  *
  */
 public abstract class GamePiece implements Drawable {

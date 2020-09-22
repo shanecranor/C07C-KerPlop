@@ -3,8 +3,8 @@ package gameEngine;
 /**
  * To handle all moveable pieces
  * 
- * @author Mark Baldwin
- * @author Cyndi Rader
+ * @author Shane Cranor
+ * @author Louis Miller
  * 
  */
 //public interface Moveable extends Drawable{

@@ -6,8 +6,8 @@ import java.util.Scanner;
  * The actual game player Keeps track of player status (location, hit points,
  * etc.) Manages player movement.
  * 
- * @author Mark Baldwin
- * @author Cyndi Rader
+ * @author Shane Cranor
+ * @author Louis Miller
  *
  */
 public class Player implements Drawable {

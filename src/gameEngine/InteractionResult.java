@@ -9,6 +9,7 @@ package gameEngine;
  */
 public enum InteractionResult {
 	  
-	HIT, KILL, ADVANCE, GET_POINT, NONE; // TODO Every Interaction Result must be implemented and assigned to a player
+	// List of all possible player / piece interactions
+	HIT, KILL, ADVANCE, GET_POINT, NONE; 
 	
 }

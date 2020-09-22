@@ -10,11 +10,13 @@ public class CSStudent extends GamePiece implements Moveable {
 	private final static char SYMBOL = 'S';
 	private final static String NAME = "CS Student";
 	
+	// Constructor
 	public CSStudent(int location) {
 		super(SYMBOL, NAME, location);
 	}
 	
 	
+	// Always has the Interaction Result of None
 	public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
 		return InteractionResult.NONE; 
 	}
@@ -26,9 +28,12 @@ public class CSStudent extends GamePiece implements Moveable {
 		int potentialLocation;
 		while (!possible) {
 			potentialLocation = (int)(Math.random() * (GameEngine.BOARD_SIZE - MIN + 1) + MIN);
-			if (gameBoard[potentialLocation] == null) {
+			if (gameBoard[potentialLocation] == null && potentialLocation != playerLocation) {
 				possible = true;
+				int previousLocation = this.getLocation();
 				this.setLocation(potentialLocation);
+				gameBoard[potentialLocation] = gameBoard[previousLocation];
+				gameBoard[previousLocation] = null;
 			}
 		}
 	}

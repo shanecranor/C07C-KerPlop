@@ -23,23 +23,27 @@ public class HASS200 extends GamePiece implements Moveable {
 	
 	// Will generally move in the player's direction
 	public void move(Drawable[] gameBoard, int playerLocation) {
-		int currentLocation = this.getLocation();
 		if(Math.random() < 0.5) { //only move 50% of the time
-			if(currentLocation > playerLocation) {
-				while (currentLocation >= 0 && gameBoard[currentLocation] != null && currentLocation != playerLocation) {
-					currentLocation--;
-				}
-			} else {
-				while (currentLocation < GameEngine.BOARD_SIZE && gameBoard[currentLocation] != null && currentLocation != playerLocation) {
-					currentLocation++;
-				}
+			doMove(gameBoard, playerLocation);
+		}
+	}
+	
+	public void doMove(Drawable[] gameBoard, int playerLocation) {
+		int currentLocation = this.getLocation();
+		if(currentLocation > playerLocation) {
+			while (currentLocation >= 0 && gameBoard[currentLocation] != null && currentLocation != playerLocation) {
+				currentLocation--;
 			}
-			if (currentLocation >= 0 && currentLocation < GameEngine.BOARD_SIZE && currentLocation != playerLocation) { //if we can't move, don't
-				int previousLocation = this.getLocation();
-				this.setLocation(currentLocation);
-				gameBoard[currentLocation] = gameBoard[previousLocation];
-				gameBoard[previousLocation] = null;
+		} else {
+			while (currentLocation < GameEngine.BOARD_SIZE && gameBoard[currentLocation] != null && currentLocation != playerLocation) {
+				currentLocation++;
 			}
+		}
+		if (currentLocation >= 0 && currentLocation < GameEngine.BOARD_SIZE && currentLocation != playerLocation) { //if we can't move, don't
+			int previousLocation = this.getLocation();
+			this.setLocation(currentLocation);
+			gameBoard[currentLocation] = gameBoard[previousLocation];
+			gameBoard[previousLocation] = null;
 		}
 	}
 }

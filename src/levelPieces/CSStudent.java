@@ -26,7 +26,7 @@ public class CSStudent extends GamePiece implements Moveable {
 		boolean possible = false;
 		int potentialLocation;
 		while (!possible) {
-			potentialLocation = (int)(Math.random() * (GameEngine.BOARD_SIZE-1));
+			potentialLocation = (int)(Math.random() * (GameEngine.BOARD_SIZE));
 			if (gameBoard[potentialLocation] == null && potentialLocation != playerLocation) {
 				possible = true;
 				int previousLocation = this.getLocation();

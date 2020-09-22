@@ -1,0 +1,29 @@
+commit 7defec5864954cae24450edd885538b9584cf253
+Author: shanecranor <70922464+shanecranor@users.noreply.github.com>
+Date:   Tue Sep 22 00:18:31 2020 -0600
+
+    fixed a few minor bugs + added comments
+
+commit 2559d5b5afb142d96e642274e33f45eb93e7588a
+Author: shanecranor <70922464+shanecranor@users.noreply.github.com>
+Date:   Mon Sep 21 23:59:36 2020 -0600
+
+    most things working!
+
+commit 6f5e2382fa6aa4c0b42184865f9e40df95ec5429
+Author: shanecranor <70922464+shanecranor@users.noreply.github.com>
+Date:   Mon Sep 21 22:55:33 2020 -0600
+
+    implemented many new pieces
+
+commit e6f0d8623a93e754d21ee57720f5428ca555b64b
+Author: shanecranor <70922464+shanecranor@users.noreply.github.com>
+Date:   Sat Sep 19 16:05:25 2020 -0600
+
+    Test commit
+
+commit 24de8ea809a165eb445636c14c64c98e8736b6f5
+Author: shanecranor <70922464+shanecranor@users.noreply.github.com>
+Date:   Sat Sep 19 16:02:22 2020 -0600
+
+    Initial commit
